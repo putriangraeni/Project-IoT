@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="26dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView_id"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/bg_lock1"
+            android:layout_gravity="center"
+            android:layout_marginTop="28dp"/>
+
+        <TextView
+            android:id="@+id/textView1_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click To Unclock"
+            android:textColor="#686868"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="28dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/thumb"
+            android:layout_gravity="center"
+            app:showText="true"
+            app:track="@drawable/track"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/history_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textColor="#686868"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="40dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_history"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/history_id"
+            app:layout_constraintVertical_bias="0"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Akses Terakhir"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/tv_history_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/tv_history_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</LinearLayout>

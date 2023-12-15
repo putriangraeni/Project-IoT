@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_lupaPassword_id"
+    android:layout_margin="20dp"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogBox_pass_id"
+        android:background="@drawable/box"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Reset Password"
+            android:background="@drawable/blue_round"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/baseline_lock_reset_24"
+            android:drawablePadding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan email untuk mereset password"
+            android:textAlignment="center"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:layout_marginTop="6dp"
+            android:id="@+id/edt_email_id"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="58dp"
+                    android:text="Cancel"
+                    android:id="@+id/btn_cancel_id"
+                    app:cornerRadius="10dp"
+                    android:backgroundTint="@color/Biru_navi"/>
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="58dp"
+                    android:text="Reset"
+                    android:layout_marginLeft="14dp"
+                    app:cornerRadius="10dp"
+                    android:backgroundTint="@color/Biru_navi"
+                    android:id="@+id/btn_reset_id"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
