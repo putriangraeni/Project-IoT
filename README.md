@@ -1,6 +1,6 @@
-𝗦𝗜𝗦𝗧𝗘𝗠 𝗞𝗘𝗔𝗠𝗔𝗡𝗔𝗡 𝗟𝗢𝗞𝗘𝗥 𝗕𝗘𝗥𝗕𝗔𝗦𝗜𝗦 𝗜𝗢𝗧
+# Sistem Keamanan Loker Berbasis IoT
 
-Project Final Semester 4 Mata Kuliah Internet of Things (IoT)
+## Project Final Semester 4 Mata Kuliah Internet of Things (IoT)
 - Sistem ini dirancang untuk dapat memantau aktivitas penggunaan loker, serta akses dalam membuka dan mengunci loker menggunakan aplikasi android.
 - Komponen utama yang digunakan yaitu ESP32, selenoid, aplikasi mobile android, dan firebase.
 - Membentuk tim sebanyak 5 orang
